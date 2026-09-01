@@ -212,12 +212,236 @@ body {
 }
 
 
+/* =========================
+   WORKS
+========================= */
+
+.works-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 140px 32px 180px;
+  border-top: 1px solid #252525;
+}
+
+.works-heading h2 {
+  margin: 0;
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 1.05;
+}
+
+.works-heading p {
+  max-width: 620px;
+  margin: 24px 0 0;
+  color: #bdbdbd;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.works-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 56px;
+}
+
+.filter-button {
+  padding: 10px 15px;
+  border: 1px solid #3a3a3a;
+  border-radius: 999px;
+  color: #bdbdbd;
+  background: transparent;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.filter-button:hover,
+.filter-button:focus-visible {
+  color: #f5f5f5;
+  border-color: #d6a52a;
+}
+
+.filter-button.is-active {
+  color: #111111;
+  border-color: #d6a52a;
+  background: #d6a52a;
+}
+
+.filter-button[data-filter="SENSITIVE"].is-active {
+  color: #ffffff;
+  border-color: #d94f98;
+  background: #d94f98;
+}
+
+.works-status {
+  min-height: 1.5em;
+  margin: 22px 0;
+  color: #777777;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.work-card {
+  overflow: hidden;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  background: #161616;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  border-color: #d6a52a;
+}
+
+.work-card.is-sensitive:hover {
+  border-color: #d94f98;
+}
+
+.work-media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: #202020;
+}
+
+.work-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.38s ease, transform 0.38s ease;
+}
+
+.work-card.is-sensitive:not(.is-revealed) .work-image {
+  filter: blur(24px);
+  transform: scale(1.12);
+}
+
+.spoiler-cover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  border: 0;
+  color: #ffffff;
+  background: rgba(10, 10, 10, 0.76);
+  cursor: pointer;
+}
+
+.spoiler-cover:hover,
+.spoiler-cover:focus-visible {
+  background: rgba(10, 10, 10, 0.68);
+}
+
+.spoiler-label {
+  color: #ef72b2;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.spoiler-action {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #777777;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+}
+
+.work-card.is-revealed .spoiler-cover {
+  display: none;
+}
+
+.work-info {
+  display: flex;
+  flex-direction: column;
+  min-height: 210px;
+  padding: 25px;
+}
+
+.work-info h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.work-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  margin: 11px 0 0;
+}
+
+.work-tag {
+  color: #d6a52a;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.is-sensitive .work-tag:first-child {
+  color: #ef72b2;
+}
+
+.work-description {
+  margin: 22px 0 0;
+  color: #adadad;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.work-platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.work-platform {
+  color: #e4e4e4;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+a.work-platform::after {
+  content: " ↗";
+  color: #d6a52a;
+}
+
+.works-empty,
+.works-noscript {
+  grid-column: 1 / -1;
+  padding: 48px;
+  border: 1px solid #333333;
+  color: #999999;
+  text-align: center;
+}
+
+
 /* スマホ */
 
 @media (max-width: 800px) {
 
   .about-section {
     padding: 100px 24px;
+  }
+
+  .works-section {
+    padding: 100px 24px 120px;
   }
 
   .about-fields {
@@ -228,4 +452,29 @@ body {
     min-height: auto;
   }
 
+  .works-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+@media (max-width: 560px) {
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-button {
+    flex: 1 0 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .work-card,
+  .work-image {
+    transition: none;
+  }
 }
