@@ -53,7 +53,7 @@ body {
   margin-top: 12px;
 
   color: #d6a52a;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 0.22em;
 }
 
@@ -62,7 +62,7 @@ body {
 
   color: #d6a52a;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 0.15em;
 }
 
@@ -90,11 +90,11 @@ body {
 .section-label {
   display: inline-block;
 
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 
   color: #d6a52a;
 
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.25em;
 }
@@ -161,7 +161,7 @@ body {
 .field-number {
   color: #d6a52a;
 
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 0.2em;
 }
 
@@ -175,7 +175,7 @@ body {
   margin-top: 0;
   color: #d6a52a;
 
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.08em;
 }
 
@@ -184,7 +184,7 @@ body {
 
   color: #bdbdbd;
 
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.8;
 }
 
@@ -203,7 +203,7 @@ body {
 .approach p {
   color: #cfcfcf;
 
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2;
 }
 
@@ -240,7 +240,7 @@ body {
 .works-filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 14px;
   margin-top: 56px;
 }
 
@@ -251,7 +251,7 @@ body {
   color: #bdbdbd;
   background: transparent;
   font: inherit;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.12em;
   cursor: pointer;
@@ -280,7 +280,7 @@ body {
   min-height: 1.5em;
   margin: 22px 0;
   color: #777777;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 0.12em;
 }
 
@@ -349,7 +349,7 @@ body {
 
 .spoiler-label {
   color: #ef72b2;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.18em;
 }
@@ -357,7 +357,7 @@ body {
 .spoiler-action {
   padding-bottom: 3px;
   border-bottom: 1px solid #777777;
-  font-size: 10px;
+  font-size: 14px;
   letter-spacing: 0.16em;
 }
 
@@ -387,7 +387,7 @@ body {
 
 .work-tag {
   color: #d6a52a;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.1em;
 }
@@ -413,7 +413,7 @@ body {
 
 .work-platform {
   color: #e4e4e4;
-  font-size: 11px;
+  font-size: 14px;
   text-decoration: none;
 }
 
