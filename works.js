@@ -4,7 +4,7 @@ const works = [
     genres: ["恋愛", "BL", "HORROR"],
     platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69206ed78fa00af7c688f231" }],
     sensitive: true,
-    image: "./assets/nemui-icon.png",
+    image: "./assets/01-soujiya.png",
     description: "【サイコパス×一目惚れ】超合理主義、共感のできない人間が、恋愛にどう向き合うのか。"
   },
   {
