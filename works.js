@@ -1,11 +1,19 @@
 const works = [
   {
     title: "掃除屋さんは恋を知らない",
-    genres: ["恋愛", "BL", "HORROR"],
+    genres: ["恋愛", "NL", "BL", "ホラー"],
     platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69206ed78fa00af7c688f231" }],
     sensitive: true,
     image: "./assets/01-soujiya.png",
     description: "【サイコパス×一目惚れ】超合理主義、共感のできない人間が、恋愛にどう向き合うのか。"
+  },
+ {
+    title: "まっしろな記憶を君と",
+    genres: ["恋愛", "NL", "BL", "ミステリー"],
+    platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/693060d486854aacc04d2557" }],
+    sensitive: false,
+    image: "./assets/nemui-icon.png",
+    description: "【記憶喪失×看病シチュ】言葉の端々に潜む、重要な手がかり。──結末は、あなた次第。"
   },
   {
     title: "恋するアンドロイド",
@@ -49,7 +57,7 @@ const works = [
   }
 ];
 
-const filters = ["ALL", "GENERAL", "SENSITIVE", "BL", "恋愛", "HORROR"];
+const filters = ["ALL", "GENERAL", "SENSITIVE", "恋愛", "NL", "BL", "ホラー", "ミステリー"];
 const filtersElement = document.querySelector(".works-filters");
 const gridElement = document.querySelector(".works-grid");
 const statusElement = document.querySelector(".works-status");
