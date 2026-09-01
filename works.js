@@ -8,7 +8,7 @@ const works = [
     description: "【サイコパス×一目惚れ】超合理主義、共感のできない人間が、恋愛にどう向き合うのか。"
   },
  {
-    title: "まっしろな記憶を君と",
+    title: "まっしろな記憶を、君と。",
     genres: ["恋愛", "NL", "BL", "ミステリー"],
     platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/693060d486854aacc04d2557" }],
     sensitive: false,
