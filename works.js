@@ -1,16 +1,16 @@
 const works = [
   {
-    title: "エドガー・グレイヴス",
-    genres: ["GENERAL", "BL", "HORROR"],
-    platforms: [{ name: "キャラぷ", url: "" }, { name: "Plaitoon", url: "" }],
-    sensitive: false,
+    title: "掃除屋さんは恋を知らない",
+    genres: ["恋愛", "BL", "HORROR"],
+    platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69206ed78fa00af7c688f231" }],
+    sensitive: true,
     image: "./assets/nemui-icon.png",
-    description: "対話と選択によって関係性が変化する、ダークファンタジー作品。"
+    description: "【サイコパス×一目惚れ】超合理主義、共感のできない人間が、恋愛にどう向き合うのか。"
   },
   {
     title: "恋するアンドロイド",
     genres: ["GENERAL", "恋愛"],
-    platforms: [{ name: "キャラぷ", url: "" }],
+    platforms: [{ name: "キャラぷ", url: "" },{ name: "Plaitoon", url: "" }],
     sensitive: false,
     image: "./assets/nemui-icon.png",
     description: "心を学ぶアンドロイドと、少しずつ距離を縮めていく物語。"
