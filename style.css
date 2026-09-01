@@ -94,7 +94,7 @@ body {
 
   color: #d6a52a;
 
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.25em;
 }
@@ -387,7 +387,7 @@ body {
 
 .work-tag {
   color: #d6a52a;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.1em;
 }
@@ -406,20 +406,62 @@ body {
 .work-platforms {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 8px;
+
   margin-top: auto;
   padding-top: 24px;
 }
 
 .work-platform {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 32px;
+  padding: 0 13px;
+
+  border: 1px solid #444444;
+  border-radius: 999px;
+
   color: #e4e4e4;
+  background: #1c1c1c;
+
   font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
   text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
 }
 
+/* リンクが設定されているチップ */
+a.work-platform {
+  cursor: pointer;
+}
+
+a.work-platform:hover,
+a.work-platform:focus-visible {
+  color: #111111;
+  border-color: #d6a52a;
+  background: #d6a52a;
+}
+
+/* 外部リンク矢印 */
 a.work-platform::after {
-  content: " ↗";
+  content: "↗";
+  margin-left: 6px;
+
   color: #d6a52a;
+  line-height: 1;
+}
+
+a.work-platform:hover::after,
+a.work-platform:focus-visible::after {
+  color: #111111;
 }
 
 .works-empty,
