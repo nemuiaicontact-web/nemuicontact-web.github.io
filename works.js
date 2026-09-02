@@ -57,7 +57,7 @@ const works = [
   }
 ];
 
-const filters = ["ALL", "GENERAL", "SENSITIVE", "恋愛", "NL", "BL", "ホラー", "ミステリー"];
+const filters = ["ALL", "GENERAL", "SENSITIVE", "恋愛", "日常", "NL", "BL", "ホラー", "ミステリー"];
 const filtersElement = document.querySelector(".works-filters");
 const gridElement = document.querySelector(".works-grid");
 const statusElement = document.querySelector(".works-status");
