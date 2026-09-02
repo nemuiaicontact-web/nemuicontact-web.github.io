@@ -1,7 +1,7 @@
 const works = [
   {
     title: "掃除屋さんは恋を知らない",
-    genres: ["恋愛", "NL", "BL", "ホラー"],
+    genres: ["恋愛", "NL", "BL", "ミステリー"],
     platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69206ed78fa00af7c688f231" }],
     sensitive: true,
     image: "./assets/01-soujiya.png",
@@ -9,55 +9,55 @@ const works = [
   },
  {
     title: "まっしろな記憶を、君と。",
-    genres: ["恋愛", "NL", "BL", "ミステリー"],
+    genres: ["GENERAL", "恋愛", "NL", "BL", "ミステリー"],
     platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/693060d486854aacc04d2557" }],
     sensitive: false,
     image: "./assets/nemui-icon.png",
     description: "【記憶喪失×看病シチュ】\n言葉の端々に潜む、重要な手がかり。\n──結末は、あなた次第。"
   },
   {
-    title: "恋するアンドロイド",
-    genres: ["GENERAL", "恋愛"],
-    platforms: [{ name: "キャラぷ", url: "" },{ name: "Plaitoon", url: "" }],
+    title: "リフレクトプレゼンス",
+    genres: ["GENERAL", "恋愛", "日常", "BL", "ホラー"],
+    platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/6963a09507896860b047143e" }],
     sensitive: false,
     image: "./assets/nemui-icon.png",
-    description: "心を学ぶアンドロイドと、少しずつ距離を縮めていく物語。"
+    description: "【双子×アイデンティティ】\nずっと一緒に過ごしてきた弟。\nそれぞれの個性とは何なのか。"
   },
   {
-    title: "夜を歩くもの",
-    genres: ["GENERAL", "ホラー"],
-    platforms: [{ name: "Talelynx", url: "" }],
+    title: "酔狂な鬼に拾われまして",
+    genres: ["GENERAL", "恋愛", "NL", "BL", "SF"],
+    platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69677029617a4d69bc15313f" }],
     sensitive: false,
     image: "./assets/nemui-icon.png",
-    description: "あなたの言葉が手がかりになる、静かなミステリー＆ホラー。"
+    description: "【サイバーパンク×人外】\n貴方と鬼の、奇妙な縁と珍道中。\nようこそ、ネオンと人外だらけの繁華街へ。"
   },
   {
-    title: "チェリーボーイは朝のありかを知らない",
-    genres: ["BL", "恋愛"],
-    platforms: [{ name: "Plaitoon", url: "" }],
+    title: "ハッピーエンドのその先で～転生勇者に囲われた件について～",
+    genres: ["恋愛", "NL", "BL", "ファンタジー"],
+    platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69a57bf076f5e6dc267357b7" }],
     sensitive: true,
     image: "./assets/nemui-icon.png",
-    description: "大人同士の距離と感情を描く、センシティブなテーマを含む作品。"
+    description: "【なろう系勇者×ご都合展開の喪失】\nこちらでは聖人君子で頼りになる、\nそんな勇者は登場しません。"
   },
   {
-    title: "秘密の同居人",
-    genres: ["恋愛"],
-    platforms: [{ name: "キャラぷ", url: "" }],
+    title: "ウチの兄が世話好きすぎる！",
+    genres: ["恋愛", "NL", "BL"],
+    platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69b9defb3a32366e33e43363" }],
     sensitive: true,
     image: "./assets/nemui-icon.png",
-    description: "秘密を抱えたふたりの関係を描く、大人向けの恋愛作品。"
+    description: "【Dom/Subユニバース×義兄弟(妹)】\nDom/Subユニバース作品です。\nユーザーはSubで固定されています。"
   },
   {
-    title: "赤い部屋の招待状",
-    genres: ["BL", "ホラー"],
-    platforms: [{ name: "Talelynx", url: "" }],
-    sensitive: true,
-    image: "./assets/nemui-icon.png",
-    description: "閉ざされた部屋で選択を重ねる、ダークな対話型ホラー。"
+    title: "怪しい箱を開けたら、犬に懐かれたんだが。",
+    genres: ["GENERAL", "日常", "ホラー"],
+    platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69c0c810e2649bc61d563943" }],
+    sensitive: false,
+    image: "./assets/01-soujiya.png",
+    description: "【可愛いわんちゃん×民俗日常系ホラー】\n出てきたのは怪しい、御札だらけの木箱。\n「『あるじ』、どこに行ってたの？」"
   }
 ];
 
-const filters = ["ALL", "GENERAL", "SENSITIVE", "恋愛", "日常", "NL", "BL", "ホラー", "ミステリー"];
+const filters = ["ALL", "GENERAL", "SENSITIVE", "恋愛", "日常", "NL", "BL", "ファンタジー", "SF", "ホラー", "ミステリー"];
 const filtersElement = document.querySelector(".works-filters");
 const filterScrollElement = document.querySelector(".works-filter-scroll");
 const gridElement = document.querySelector(".works-grid");
