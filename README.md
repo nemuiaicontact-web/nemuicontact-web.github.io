@@ -21,6 +21,11 @@ LABは次の2カテゴリに分かれています。
 - PROJECT — Webツール、UI、プロトタイプなど、実際に触れられるもの
 - CASE STUDY — 制作裏話、対話設計、UI実験、制作プロセスなどの記録
 
+現在の登録内容:
+
+- PROJECT — neMui Works Renewal
+- CASE STUDY — 未実装の恋は、一周年の夜に
+
 SUPPORTや外部支援リンクは、現時点ではLABに含めていません。
 
 ## ファイルの役割
@@ -143,3 +148,4 @@ ZIPファイルはそのままアップロードせず、必ず展開して中�
 - 日本語フォントをNoto Sans JPへ変更
 - READMEをサイト運用ガイドとして更新
 - LABの説明文の改行と複数リンクに対応
+- LABへPROJECTとCASE STUDYを1件ずつ登録

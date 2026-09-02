@@ -23,21 +23,35 @@
 
 const labItems = [
   {
+    category: "PROJECT",
+    title: "neMui Works Renewal",
+    description: [
+      "Notionで運用していたポートフォリオを、",
+      "更新負担を減らすため静的Webサイトとして再設計。"
+    ],
+    tags: ["WEB", "PORTFOLIO", "GITHUB PAGES"],
+    links: [
+      {
+        label: "VIEW PROJECT",
+        url: "https://nemuiaicontact-web.github.io/nemuicontact-web.github.io/",
+        external: false
+      },
+      {
+        label: "VIEW ARCHIVE",
+        url: "https://github.com/nemuiaicontact-web/nemuicontact-web.github.io/tree/main",
+        external: true
+      }
+    ]
+  },
+  {
     category: "CASE STUDY",
-
     title: "未実装の恋は、一周年の夜に",
-
     description: [
       "本編に入る前に、",
       "ユーザーの中へ「過去の思い出」を仮構築するため、",
       "架空のファンサイト風外部ページを制作。"
     ],
-
-    tags: [
-      "EXTERNAL EXPERIENCE",
-      "MEMORY DESIGN"
-    ],
-
+    tags: ["EXTERNAL EXPERIENCE", "MEMORY DESIGN"],
     links: [
       {
         label: "READ NOTE",
@@ -51,30 +65,6 @@ const labItems = [
       }
     ]
   }
-];
-
-const labItems = [
-{
-  category: "PROJECT",
-  title: "neMui Works Renewal",
-  description: [
-    "Notionで運用していたポートフォリオを、",
-    "更新負担を減らすため静的Webサイトとして再設計。"
-  ],
-  tags: ["WEB", "PORTFOLIO", "GITHUB PAGES"],
-          links: [
-      {
-        label: "VIEW PROJECT",
-        url: "https://nemuiaicontact-web.github.io/nemuicontact-web.github.io/",
-        external: false
-      },
-      {
-        label: "VIEW ARCHIVE",
-        url: "https://github.com/nemuiaicontact-web/nemuicontact-web.github.io/tree/main",
-        external: true
-      }
-  ]
-}
 ];
 
 const labCategories = ["PROJECT", "CASE STUDY"];
