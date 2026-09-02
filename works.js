@@ -25,7 +25,7 @@ const works = [
   },
   {
     title: "夜を歩くもの",
-    genres: ["GENERAL", "HORROR"],
+    genres: ["GENERAL", "ホラー"],
     platforms: [{ name: "Talelynx", url: "" }],
     sensitive: false,
     image: "./assets/nemui-icon.png",
