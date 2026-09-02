@@ -49,7 +49,7 @@ const works = [
   },
   {
     title: "赤い部屋の招待状",
-    genres: ["BL", "HORROR"],
+    genres: ["BL", "ホラー"],
     platforms: [{ name: "Talelynx", url: "" }],
     sensitive: true,
     image: "./assets/nemui-icon.png",
