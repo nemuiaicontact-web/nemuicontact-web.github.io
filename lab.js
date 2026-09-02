@@ -64,7 +64,24 @@ const labItems = [
         external: true
       }
     ]
-  }
+  },
+  {
+    category: "CASE STUDY",
+    title: "「絶対BL受けシミュレーター」はどうして生まれたのか",
+    description: [
+      "「すべてのユーザーは受けである」という絶対原則を、",
+      "対話の中でどう維持するか。",
+      "物語ではなく、“物語が起こる仕組み”を設計した記録。"
+    ],
+    tags: ["AI CHAT", "SYSTEM DESIGN", "META INTERACTION"],
+    links: [
+      {
+        label: "READ NOTE",
+        url: "https://note.com/nemui_human/n/neccdc1d13cd0",
+        external: true
+      }
+    ]
+  },
 ];
 
 const labCategories = ["PROJECT", "CASE STUDY"];
