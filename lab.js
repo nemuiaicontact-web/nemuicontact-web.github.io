@@ -69,7 +69,7 @@ const labItems = [
       },
       {
         label: "VIEW ARCHIVE",
-        url: "https://wax-mistake-f56.notion.site/37ac69eb98998083b6a1ed6c1f7376a4",
+        url: "https://github.com/nemuiaicontact-web/nemuicontact-web.github.io/tree/main",
         external: true
       }
   ]
