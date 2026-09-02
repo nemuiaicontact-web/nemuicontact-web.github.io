@@ -53,6 +53,28 @@ const labItems = [
   }
 ];
 
+{
+  category: "PROJECT",
+  title: "neMui Works Renewal",
+  description: [
+    "Notionで運用していたポートフォリオを、",
+    "更新負担を減らすため静的Webサイトとして再設計。"
+  ],
+  tags: ["WEB", "PORTFOLIO", "GITHUB PAGES"],
+          links: [
+      {
+        label: "VIEW PROJECT",
+        url: "https://nemuiaicontact-web.github.io/nemuicontact-web.github.io/",
+        external: false
+      },
+      {
+        label: "VIEW ARCHIVE",
+        url: "https://wax-mistake-f56.notion.site/37ac69eb98998083b6a1ed6c1f7376a4",
+        external: true
+      }
+  ]
+}
+
 const labCategories = ["PROJECT", "CASE STUDY"];
 
 function escapeLabText(value) {
