@@ -259,6 +259,14 @@ body {
   margin-top: 56px;
 }
 
+.works-filter-hint {
+  display: none;
+}
+
+.works-filter-scroll {
+  position: relative;
+}
+
 .filter-button {
   padding: 10px 15px;
   border: 1px solid #3a3a3a;
@@ -775,13 +783,82 @@ a.work-platform:focus-visible::after {
     padding-top: 36px;
   }
 
+  .works-filter-hint {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 40px 0 12px;
+    color: #d6a52a;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+  }
+
+  .works-filter-hint::before {
+    content: "";
+    flex: 0 0 22px;
+    height: 2px;
+    background: #d6a52a;
+  }
+
+  .works-filter-hint-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba(214, 165, 42, 0.75), rgba(214, 165, 42, 0.08));
+  }
+
+  .works-filter-arrow {
+    font-size: 17px;
+    line-height: 1;
+    animation: filter-arrow-nudge 1.5s ease-in-out infinite;
+  }
+
+  .works-filter-scroll {
+    margin: 0 -24px;
+  }
+
+  .works-filter-scroll::before,
+  .works-filter-scroll::after {
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .works-filter-scroll::before {
+    content: "›";
+    top: 50%;
+    right: 9px;
+    color: #d6a52a;
+    font-size: 28px;
+    line-height: 1;
+    transform: translateY(-58%);
+  }
+
+  .works-filter-scroll::after {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 8px;
+    width: 52px;
+    border-right: 2px solid #d6a52a;
+    background: linear-gradient(to right, rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.96));
+  }
+
+  .works-filter-scroll.has-overflow:not(.is-at-end)::before,
+  .works-filter-scroll.has-overflow:not(.is-at-end)::after {
+    opacity: 1;
+  }
+
   .works-filters {
     flex-wrap: nowrap;
     gap: 10px;
-    margin: 40px -24px 0;
-    padding: 0 24px 8px;
+    margin: 0;
+    padding: 0 64px 8px 24px;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
+    scroll-snap-type: x proximity;
     scrollbar-width: none;
   }
 
@@ -795,6 +872,7 @@ a.work-platform:focus-visible::after {
 
   .filter-button {
     flex: 0 0 auto;
+    scroll-snap-align: start;
   }
 
   .lab-grid {
@@ -847,6 +925,17 @@ a.work-platform:focus-visible::after {
   }
 }
 
+@keyframes filter-arrow-nudge {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(4px);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -857,5 +946,9 @@ a.work-platform:focus-visible::after {
   .lab-card,
   .works-more {
     transition: none;
+  }
+
+  .works-filter-arrow {
+    animation: none;
   }
 }

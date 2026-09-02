@@ -59,6 +59,7 @@ const works = [
 
 const filters = ["ALL", "GENERAL", "SENSITIVE", "恋愛", "日常", "NL", "BL", "ホラー", "ミステリー"];
 const filtersElement = document.querySelector(".works-filters");
+const filterScrollElement = document.querySelector(".works-filter-scroll");
 const gridElement = document.querySelector(".works-grid");
 const statusElement = document.querySelector(".works-status");
 const moreButton = document.querySelector(".works-more");
@@ -140,6 +141,16 @@ function renderFilters() {
       aria-pressed="${filter === activeFilter}"
     >${filter}</button>
   `).join("");
+
+  requestAnimationFrame(updateFilterScrollCue);
+}
+
+function updateFilterScrollCue() {
+  const hasOverflow = filtersElement.scrollWidth > filtersElement.clientWidth + 2;
+  const isAtEnd = filtersElement.scrollLeft + filtersElement.clientWidth >= filtersElement.scrollWidth - 2;
+
+  filterScrollElement.classList.toggle("has-overflow", hasOverflow);
+  filterScrollElement.classList.toggle("is-at-end", !hasOverflow || isAtEnd);
 }
 
 filtersElement.addEventListener("click", (event) => {
@@ -151,6 +162,10 @@ filtersElement.addEventListener("click", (event) => {
   renderFilters();
   renderWorks();
 });
+
+filtersElement.addEventListener("scroll", updateFilterScrollCue, { passive: true });
+
+window.addEventListener("resize", updateFilterScrollCue);
 
 moreButton.addEventListener("click", () => {
   isWorksExpanded = true;
@@ -168,6 +183,7 @@ gridElement.addEventListener("click", (event) => {
 mobileWorksQuery.addEventListener("change", () => {
   isWorksExpanded = false;
   renderWorks();
+  requestAnimationFrame(updateFilterScrollCue);
 });
 
 renderFilters();
