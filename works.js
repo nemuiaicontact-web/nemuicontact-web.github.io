@@ -5,7 +5,7 @@ const works = [
     platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69206ed78fa00af7c688f231" }],
     sensitive: true,
     image: "./assets/01-soujiya.png",
-    description: "【サイコパス×一目惚れ】\n超合理主義、共感のできない人間が、恋愛にどう向き合うのか。"
+    description: "【サイコパス×一目惚れ】\n超合理主義、共感のできない人間が、\n恋愛にどう向き合うのか。"
   },
  {
     title: "まっしろな記憶を、君と。",
