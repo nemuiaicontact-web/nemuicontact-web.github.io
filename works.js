@@ -5,7 +5,7 @@ const works = [
     platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69206ed78fa00af7c688f231" }],
     sensitive: true,
     image: "./assets/01-soujiya.png",
-    description: "【サイコパス×一目惚れ】超合理主義、共感のできない人間が、恋愛にどう向き合うのか。"
+    description: "【サイコパス×一目惚れ】\n超合理主義、共感のできない人間が、恋愛にどう向き合うのか。"
   },
  {
     title: "まっしろな記憶を、君と。",
@@ -13,7 +13,7 @@ const works = [
     platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/693060d486854aacc04d2557" }],
     sensitive: false,
     image: "./assets/nemui-icon.png",
-    description: "【記憶喪失×看病シチュ】言葉の端々に潜む、重要な手がかり。──結末は、あなた次第。"
+    description: "【記憶喪失×看病シチュ】\n言葉の端々に潜む、重要な手がかり。\n──結末は、あなた次第。"
   },
   {
     title: "恋するアンドロイド",
