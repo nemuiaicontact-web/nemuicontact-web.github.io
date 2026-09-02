@@ -61,7 +61,11 @@ const filters = ["ALL", "GENERAL", "SENSITIVE", "恋愛", "日常", "NL", "BL", 
 const filtersElement = document.querySelector(".works-filters");
 const gridElement = document.querySelector(".works-grid");
 const statusElement = document.querySelector(".works-status");
+const moreButton = document.querySelector(".works-more");
+const mobileWorksQuery = window.matchMedia("(max-width: 560px)");
+const mobileWorksLimit = 3;
 let activeFilter = "ALL";
+let isWorksExpanded = false;
 
 function matchesFilter(work, filter) {
   if (filter === "ALL") return true;
@@ -102,15 +106,29 @@ function createWorkCard(work, index) {
 }
 
 function renderWorks() {
-  const visibleWorks = works
+  const filteredWorks = works
     .map((work, index) => ({ work, index }))
     .filter(({ work }) => matchesFilter(work, activeFilter));
+
+  const shouldLimitWorks = mobileWorksQuery.matches && !isWorksExpanded;
+  const visibleWorks = shouldLimitWorks
+    ? filteredWorks.slice(0, mobileWorksLimit)
+    : filteredWorks;
+  const remainingWorks = filteredWorks.length - visibleWorks.length;
 
   gridElement.innerHTML = visibleWorks.length
     ? visibleWorks.map(({ work, index }) => createWorkCard(work, index)).join("")
     : `<p class="works-empty">このタグの作品はまだありません。</p>`;
 
-  statusElement.textContent = `${visibleWorks.length} WORK${visibleWorks.length === 1 ? "" : "S"}`;
+  statusElement.textContent = visibleWorks.length === filteredWorks.length
+    ? `${filteredWorks.length} WORK${filteredWorks.length === 1 ? "" : "S"}`
+    : `${visibleWorks.length} / ${filteredWorks.length} WORKS`;
+
+  moreButton.hidden = remainingWorks <= 0;
+  moreButton.textContent = remainingWorks > 0
+    ? `MORE WORKS — 残り${remainingWorks}件`
+    : "MORE WORKS";
+  moreButton.setAttribute("aria-expanded", String(isWorksExpanded));
 }
 
 function renderFilters() {
@@ -129,7 +147,13 @@ filtersElement.addEventListener("click", (event) => {
   if (!button) return;
 
   activeFilter = button.dataset.filter;
+  isWorksExpanded = false;
   renderFilters();
+  renderWorks();
+});
+
+moreButton.addEventListener("click", () => {
+  isWorksExpanded = true;
   renderWorks();
 });
 
@@ -139,6 +163,11 @@ gridElement.addEventListener("click", (event) => {
 
   const card = cover.closest(".work-card");
   card.classList.add("is-revealed");
+});
+
+mobileWorksQuery.addEventListener("change", () => {
+  isWorksExpanded = false;
+  renderWorks();
 });
 
 renderFilters();

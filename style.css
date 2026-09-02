@@ -6,6 +6,13 @@ html {
   scroll-behavior: smooth;
 }
 
+#home,
+#about,
+#works,
+#lab {
+  scroll-margin-top: 24px;
+}
+
 body {
   margin: 0;
 
@@ -409,6 +416,7 @@ body {
   color: #adadad;
   font-size: 13px;
   line-height: 1.75;
+  white-space: pre-line;
 }
 
 .work-platforms {
@@ -479,6 +487,34 @@ a.work-platform:focus-visible::after {
   border: 1px solid #333333;
   color: #999999;
   text-align: center;
+}
+
+.works-more {
+  display: block;
+  width: min(100%, 360px);
+  min-height: 50px;
+  margin: 32px auto 0;
+  padding: 12px 20px;
+  border: 1px solid #d6a52a;
+  border-radius: 999px;
+  color: #d6a52a;
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.works-more:hover,
+.works-more:focus-visible {
+  color: #111111;
+  background: #d6a52a;
+}
+
+.works-more[hidden] {
+  display: none;
 }
 
 
@@ -671,25 +707,35 @@ a.work-platform:focus-visible::after {
   text-align: center;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 
 /* スマホ */
 
 @media (max-width: 800px) {
 
-  .about-section {
-    padding: 100px 24px;
+  #about {
+    min-height: auto;
+    padding: 88px 24px;
   }
 
   .works-section {
-    padding: 100px 24px 120px;
+    padding: 88px 24px 112px;
   }
 
   .lab-section {
-    padding: 100px 24px 120px;
+    padding: 88px 24px 112px;
+  }
+
+  .section-heading {
+    margin-bottom: 40px;
   }
 
   .about-fields {
     grid-template-columns: 1fr;
+    margin-top: 56px;
   }
 
   .field-card {
@@ -701,19 +747,54 @@ a.work-platform:focus-visible::after {
   }
 
   .lab-categories {
-    gap: 72px;
-    margin-top: 64px;
+    gap: 64px;
+    margin-top: 56px;
   }
 
 }
 
 @media (max-width: 560px) {
+  body {
+    padding-bottom: calc(86px + env(safe-area-inset-bottom));
+  }
+
+  .hero {
+    min-height: calc(100svh - 72px);
+    padding: 32px 24px 48px;
+  }
+
+  #about,
+  .works-section,
+  .lab-section {
+    padding-top: 72px;
+    padding-bottom: 80px;
+  }
+
+  .approach {
+    margin-top: 72px;
+    padding-top: 36px;
+  }
+
+  .works-filters {
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin: 40px -24px 0;
+    padding: 0 24px 8px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+  }
+
+  .works-filters::-webkit-scrollbar {
+    display: none;
+  }
+
   .works-grid {
     grid-template-columns: 1fr;
   }
 
   .filter-button {
-    flex: 1 0 auto;
+    flex: 0 0 auto;
   }
 
   .lab-grid {
@@ -729,6 +810,41 @@ a.work-platform:focus-visible::after {
     min-height: 280px;
     padding: 26px;
   }
+
+  .mobile-nav {
+    position: fixed;
+    z-index: 1000;
+    right: 12px;
+    bottom: calc(12px + env(safe-area-inset-bottom));
+    left: 12px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 5px;
+    border: 1px solid #3a3a3a;
+    border-radius: 16px;
+    background: rgba(17, 17, 17, 0.92);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(14px);
+  }
+
+  .mobile-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    border-radius: 11px;
+    color: #bdbdbd;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+  }
+
+  .mobile-nav a:hover,
+  .mobile-nav a:focus-visible {
+    color: #111111;
+    background: #d6a52a;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -738,7 +854,8 @@ a.work-platform:focus-visible::after {
 
   .work-card,
   .work-image,
-  .lab-card {
+  .lab-card,
+  .works-more {
     transition: none;
   }
 }

@@ -20,7 +20,7 @@
 
 <body>
 
-  <header class="hero">
+  <header id="home" class="hero">
     <img
       src="./assets/nemui-icon.png"
       alt="neMui"
@@ -145,6 +145,10 @@
     <p class="works-status" aria-live="polite"></p>
     <div class="works-grid"></div>
 
+    <button class="works-more" type="button" aria-expanded="false" hidden>
+      MORE WORKS
+    </button>
+
     <noscript>
       <p class="works-noscript">作品一覧の表示にはJavaScriptを有効にしてください。</p>
     </noscript>
@@ -190,6 +194,13 @@
   </section>
 
 </main>
+
+<nav class="mobile-nav" aria-label="ページ内ナビゲーション">
+  <a href="#home">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#works">WORKS</a>
+  <a href="#lab">LAB</a>
+</nav>
 
 <script src="./works.js"></script>
 <script src="./lab.js"></script>
