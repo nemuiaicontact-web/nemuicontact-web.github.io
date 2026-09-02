@@ -4,11 +4,18 @@
   {
     category: "PROJECT", // または "CASE STUDY"
     title: "プロジェクト名",
-    description: "短い説明文。",
+    description: [
+      "説明の1行目。",
+      "説明の2行目。"
+    ],
     tags: ["WEB TOOL", "UI"],
-    url: "https://example.com/",
-    linkLabel: "OPEN PROJECT",
-    external: true // サイト内ページなら false
+    links: [
+      {
+        label: "OPEN PROJECT",
+        url: "https://example.com/",
+        external: true // サイト内ページなら false
+      }
+    ]
   }
 
   下の配列へ、上と同じ形で項目を追加してください。
@@ -27,22 +34,33 @@ function escapeLabText(value) {
     .replaceAll("'", "&#039;");
 }
 
-function createLabCard(item) {
-  const externalAttributes = item.external
+function createLabDescription(description) {
+  const lines = Array.isArray(description) ? description : [description];
+  return lines.map((line) => escapeLabText(line)).join("<br>");
+}
+
+function createLabLink(link) {
+  const externalAttributes = link.external
     ? ' target="_blank" rel="noopener noreferrer"'
     : "";
-  const linkClass = item.external ? "" : " is-internal";
+  const linkClass = link.external ? "" : " is-internal";
 
+  return `<a class="lab-link${linkClass}" href="${escapeLabText(link.url)}"${externalAttributes}>
+    ${escapeLabText(link.label)}
+  </a>`;
+}
+
+function createLabCard(item) {
   return `<article class="lab-card">
     <p class="lab-card-type">${escapeLabText(item.category)}</p>
     <h4>${escapeLabText(item.title)}</h4>
-    <p class="lab-card-description">${escapeLabText(item.description)}</p>
+    <p class="lab-card-description">${createLabDescription(item.description)}</p>
     <div class="lab-tags" aria-label="種別タグ">
       ${item.tags.map((tag) => `<span class="lab-tag">${escapeLabText(tag)}</span>`).join("")}
     </div>
-    <a class="lab-link${linkClass}" href="${escapeLabText(item.url)}"${externalAttributes}>
-      ${escapeLabText(item.linkLabel)}
-    </a>
+    <div class="lab-links" aria-label="関連リンク">
+      ${item.links.map(createLabLink).join("")}
+    </div>
   </article>`;
 }
 

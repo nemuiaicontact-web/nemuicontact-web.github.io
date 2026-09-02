@@ -66,11 +66,18 @@ sensitive: true
 {
   category: "PROJECT",
   title: "プロジェクト名",
-  description: "プロジェクトの短い説明。",
+  description: [
+    "説明の1行目。",
+    "説明の2行目。"
+  ],
   tags: ["WEB TOOL", "UI"],
-  url: "https://example.com/",
-  linkLabel: "OPEN PROJECT",
-  external: true
+  links: [
+    {
+      label: "OPEN PROJECT",
+      url: "https://example.com/",
+      external: true
+    }
+  ]
 }
 ```
 
@@ -80,11 +87,33 @@ CASE STUDYの場合は、カテゴリを変更します。
 category: "CASE STUDY"
 ```
 
-サイト内のページへ移動させる場合は、次のように指定します。
+説明文を改行したい場合は、`description` の中へ1行ずつ追加します。
+
+複数のリンクを表示したい場合は、`links` の中へリンクを追加します。
 
 ```js
-url: "./lab/example.html",
-external: false
+links: [
+  {
+    label: "READ NOTE",
+    url: "https://note.com/example/",
+    external: true
+  },
+  {
+    label: "VIEW ARCHIVE",
+    url: "https://example.com/archive/",
+    external: true
+  }
+]
+```
+
+サイト内のページへ移動させるリンクは、次のように指定します。
+
+```js
+{
+  label: "OPEN PAGE",
+  url: "./lab/example.html",
+  external: false
+}
 ```
 
 ## GitHub Pagesへ反映する
@@ -113,3 +142,4 @@ ZIPファイルはそのままアップロードせず、必ず展開して中�
 - プラットフォームリンクをチップ表示に変更
 - 日本語フォントをNoto Sans JPへ変更
 - READMEをサイト運用ガイドとして更新
+- LABの説明文の改行と複数リンクに対応
