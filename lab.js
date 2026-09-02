@@ -53,6 +53,7 @@ const labItems = [
   }
 ];
 
+const labItems = [
 {
   category: "PROJECT",
   title: "neMui Works Renewal",
@@ -74,6 +75,7 @@ const labItems = [
       }
   ]
 }
+];
 
 const labCategories = ["PROJECT", "CASE STUDY"];
 
