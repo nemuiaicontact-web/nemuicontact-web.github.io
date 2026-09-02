@@ -69,11 +69,11 @@ const labItems = [
     category: "CASE STUDY",
     title: "「絶対BL受けシミュレーター」はどうして生まれたのか",
     description: [
-      "「すべてのユーザーは受けである」という絶対原則を、",
-      "対話の中でどう維持するか。",
-      "物語ではなく、“物語が起こる仕組み”を設計した記録。"
+      "「すべてのユーザーは受けである」という単純な原則から、",
+      "対話そのものが攻略ゲームへ変化していった過程を記録。",
+      "台詞ではなく思考手順を設計し、ユーザーごとに物語が自然発生するまでを振り返る。"
     ],
-    tags: ["AI CHAT", "SYSTEM DESIGN", "META INTERACTION"],
+    tags: ["AI CHAT", "SYSTEM DESIGN", "INTERACTION"],
     links: [
       {
         label: "READ NOTE",
