@@ -52,7 +52,7 @@ const works = [
     genres: ["GENERAL", "日常", "ホラー"],
     platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69c0c810e2649bc61d563943" }],
     sensitive: false,
-    image: "./assets/01-soujiya.png",
+    image: "./assets/nemui-icon.png",
     description: "【可愛いわんちゃん×民俗日常系ホラー】\n出てきたのは怪しい、御札だらけの木箱。\n「『あるじ』、どこに行ってたの？」"
   }
 ];
