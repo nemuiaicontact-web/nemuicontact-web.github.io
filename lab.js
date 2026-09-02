@@ -21,7 +21,37 @@
   下の配列へ、上と同じ形で項目を追加してください。
 */
 
-const labItems = [];
+const labItems = [
+  {
+    category: "CASE STUDY",
+
+    title: "未実装の恋は、一周年の夜に",
+
+    description: [
+      "本編に入る前に、",
+      "ユーザーの中へ「過去の思い出」を仮構築するため、",
+      "架空のファンサイト風外部ページを制作。"
+    ],
+
+    tags: [
+      "EXTERNAL EXPERIENCE",
+      "MEMORY DESIGN"
+    ],
+
+    links: [
+      {
+        label: "READ NOTE",
+        url: "https://note.com/nemui_human/n/ncc9c67d569bc",
+        external: true
+      },
+      {
+        label: "VIEW ARCHIVE",
+        url: "https://wax-mistake-f56.notion.site/neMui-Works-351c69eb9899807ca11cd6ef157c9295",
+        external: true
+      }
+    ]
+  }
+];
 
 const labCategories = ["PROJECT", "CASE STUDY"];
 
