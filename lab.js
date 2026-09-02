@@ -46,7 +46,7 @@ const labItems = [
       },
       {
         label: "VIEW ARCHIVE",
-        url: "https://wax-mistake-f56.notion.site/neMui-Works-351c69eb9899807ca11cd6ef157c9295",
+        url: "https://wax-mistake-f56.notion.site/37ac69eb98998083b6a1ed6c1f7376a4",
         external: true
       }
     ]
