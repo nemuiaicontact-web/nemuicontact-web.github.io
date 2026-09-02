@@ -54,7 +54,24 @@ const works = [
     sensitive: false,
     image: "./assets/nemui-icon.png",
     description: "【可愛いわんちゃん×民俗日常系ホラー】\n出てきたのは怪しい、御札だらけの木箱。\n「『あるじ』、どこに行ってたの？」"
-  }
+  },
+ {
+    title: "曰く、Kの存在証明について。",
+    genres: ["GENERAL", "恋愛", "NL", "BL", "ミステリー"],
+    platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69c445c35a9c5bb1e81d32c9" }],
+    sensitive: false,
+    image: "./assets/nemui-icon.png",
+    description: "【純文学風×代替行為】\n作家先生との、奇妙な縁の話。\n——ある古い作品に描かれた「こころ」を、\n別のかたちでなぞる物語。"
+  },
+  },
+ {
+    title: "かくて教会は夜を抱く",
+    genres: ["GENERAL", "NL", "BL", "ファンタジー"],
+    platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69cff29461d53b0887a683c2" }],[{ name: "Plaitoon", url: "https://www.plaitoon.com/ja/share/character/5ac8c1f3-674d-4678-8352-41093aa12654" }],
+    sensitive: false,
+    image: "./assets/nemui-icon.png",
+    description: "【壮年神父×ダークファンタジー】\nこの世界に神なんぞ居ない。\n聖書もパンも懺悔も祈りも、\n今夜を越えるための足場にすぎない。"
+  },
 ];
 
 const filters = ["ALL", "GENERAL", "SENSITIVE", "恋愛", "日常", "NL", "BL", "ファンタジー", "SF", "ホラー", "ミステリー"];
