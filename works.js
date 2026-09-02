@@ -67,8 +67,7 @@ const works = [
  {
     title: "かくて教会は夜を抱く",
     genres: ["GENERAL", "NL", "BL", "ファンタジー"],
-    platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69cff29461d53b0887a683c2" }],
-               [{ name: "Plaitoon", url: "https://www.plaitoon.com/ja/share/character/5ac8c1f3-674d-4678-8352-41093aa12654" }],
+    platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69cff29461d53b0887a683c2" },{ name: "Plaitoon", url: "https://www.plaitoon.com/ja/share/character/5ac8c1f3-674d-4678-8352-41093aa12654" }],
     sensitive: false,
     image: "./assets/nemui-icon.png",
     description: "【壮年神父×ダークファンタジー】\nこの世界に神なんぞ居ない。\n聖書もパンも懺悔も祈りも、\n今夜を越えるための足場にすぎない。"
