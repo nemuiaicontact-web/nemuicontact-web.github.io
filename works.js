@@ -90,6 +90,14 @@ const works = [
     sensitive: false,
     image: "./assets/nemui-icon.png",
     description: "【不器用×ラブコメ】\n彼女の表現はとっても不器用。\nなんでも物騒な言い方をしちゃう。\n「今日こそは、自然な言葉遣いで…よし」"
+  },
+ {
+    title: "チェリーボーイは前のめり",
+    genres: ["恋愛", "BL", "日常"],
+    platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69e9c69f46b40fd534480373" }],
+    sensitive: true,
+    image: "./assets/nemui-icon.png",
+    description: "【好奇心旺盛×真面目受け】\n🔞NSFW表現対応\n『99回目の失恋』を経て、恥も外聞も無く頼る彼。\n貴方なら、彼にどんな指南をしますか？"
   }
 ];
 
