@@ -82,7 +82,6 @@ const works = [
     sensitive: false,
     image: "./assets/nemui-icon.png",
     description: "【不器用×ラブコメ】\n彼は根っからの清掃員。\n汚れを見つけると、放っておけない。\n部屋も、生活も、たぶん…あなたのことも。"
-  }
   },
  {
     title: "不器用すぎるよ、つむぎちゃん！",
