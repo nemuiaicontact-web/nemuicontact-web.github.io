@@ -72,8 +72,8 @@ const works = [
     sensitive: false,
     image: "./assets/nemui-icon.png",
     description: "【壮年神父×ダークファンタジー】\nこの世界に神なんぞ居ない。\n聖書もパンも懺悔も祈りも、\n今夜を越えるための足場にすぎない。"
-  }
-{
+  },
+ {
     title: "ワーホリすぎるよ、みかげくん！",
     genres: ["GENERAL", "NL", "BL", "日常"],
     platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69dbaefda172f5e6d32ef72f" },
