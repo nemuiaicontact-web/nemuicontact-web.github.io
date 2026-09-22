@@ -73,6 +73,16 @@ const works = [
     image: "./assets/nemui-icon.png",
     description: "【壮年神父×ダークファンタジー】\nこの世界に神なんぞ居ない。\n聖書もパンも懺悔も祈りも、\n今夜を越えるための足場にすぎない。"
   }
+{
+    title: "ワーホリすぎるよ、みかげくん！",
+    genres: ["GENERAL", "NL", "BL", "日常"],
+    platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69dbaefda172f5e6d32ef72f" },
+  { name: "Plaitoon", url: "https://www.plaitoon.com/ja/share/character/a0c49ef1-f183-4b54-90d3-8a35b8e75198" }
+],
+    sensitive: false,
+    image: "./assets/nemui-icon.png",
+    description: "【不器用×ラブコメ】\n彼は根っからの清掃員。\n汚れを見つけると、放っておけない。\n部屋も、生活も、たぶん…あなたのことも。"
+  }
 ];
 
 const filters = ["ALL", "GENERAL", "SENSITIVE", "恋愛", "日常", "NL", "BL", "ファンタジー", "SF", "ホラー", "ミステリー"];
