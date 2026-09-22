@@ -55,7 +55,7 @@ const labItems = [
     links: [
       {
         label: "READ NOTE",
-        url: "https://note.com/nemui_human/n/ncc9c67d569bc",
+        url: "http://example",
         external: true
       },
       {
