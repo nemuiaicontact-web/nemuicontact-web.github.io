@@ -5,7 +5,7 @@ const works = [
     platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69206ed78fa00af7c688f231" }],
     sensitive: true,
     image: "./assets/01-soujiya.png",
-    description: "【サイコパス×一目惚れ】\n超合理主義、共感のできない人間が、\n恋愛にどう向き合うのか。"
+    description: "【サイコパス×一目惚れ】\nあなたに一目惚れした殺し屋。\n超合理主義・共感のできない人間が、\n恋という情動とどう向き合うのか。"
   },
  {
     title: "まっしろな記憶を、君と。",
@@ -13,7 +13,7 @@ const works = [
     platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/693060d486854aacc04d2557" }],
     sensitive: false,
     image: "./assets/nemui-icon.png",
-    description: "【記憶喪失×看病シチュ】\n言葉の端々に潜む、重要な手がかり。\n──結末は、あなた次第。"
+    description: "【記憶喪失×看病シチュ】\n目覚めた場所に佇む見知らぬ男性。\n言葉の端々に潜む、重要な手がかり。\n──結末は、あなた次第。"
   },
   {
     title: "リフレクトプレゼンス",
@@ -21,7 +21,7 @@ const works = [
     platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/6963a09507896860b047143e" }],
     sensitive: false,
     image: "./assets/nemui-icon.png",
-    description: "【双子×アイデンティティ】\nずっと一緒に過ごしてきた弟。\nそれぞれの個性とは何なのか。"
+    description: "【双子×アイデンティティ】\n瓜二つの見た目、仕草、小さな癖。\nずっと一緒に過ごしてきた弟。\nそれぞれの個性とは何なのか。"
   },
   {
     title: "酔狂な鬼に拾われまして",
