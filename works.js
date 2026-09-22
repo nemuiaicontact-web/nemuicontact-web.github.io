@@ -108,7 +108,7 @@ const works = [
 ],
     sensitive: false,
     image: "./assets/nemui-icon.png",
-    description: "【超不器用整備士×記録癖】 \n人間の感情を理解できない整備士と、\n年代物の8mm映写機の修理依頼。\n態度ではなく、記録で読み解く距離。"
+    description: "【超不器用整備士×記録癖】 \n人間の感情を理解できない整備士と、\n年代物の8mm映写機の修理依頼。\n態度だけではなく、記録で読み解く距離。"
   }
 ];
 
