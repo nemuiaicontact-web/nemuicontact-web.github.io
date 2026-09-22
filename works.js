@@ -75,7 +75,7 @@ const works = [
   },
  {
     title: "ワーホリすぎるよ、みかげくん！",
-    genres: ["GENERAL", "NL", "BL", "日常"],
+    genres: ["GENERAL", "恋愛", "NL", "BL", "日常"],
     platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69dbaefda172f5e6d32ef72f" },
   { name: "Plaitoon", url: "https://www.plaitoon.com/ja/share/character/a0c49ef1-f183-4b54-90d3-8a35b8e75198" }
 ],
@@ -83,9 +83,18 @@ const works = [
     image: "./assets/nemui-icon.png",
     description: "【不器用×ラブコメ】\n彼は根っからの清掃員。\n汚れを見つけると、放っておけない。\n部屋も、生活も、たぶん…あなたのことも。"
   }
+  },
+ {
+    title: "不器用すぎるよ、つむぎちゃん！",
+    genres: ["GENERAL", "恋愛", "NL", "GL", "日常"],
+    platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/69e5bfcf70a2ff492fc52e7d" }],
+    sensitive: false,
+    image: "./assets/nemui-icon.png",
+    description: "【不器用×ラブコメ】\n彼女の表現はとっても不器用。\nなんでも物騒な言い方をしちゃう。\n「今日こそは、自然な言葉遣いで…よし」"
+  }
 ];
 
-const filters = ["ALL", "GENERAL", "SENSITIVE", "恋愛", "日常", "NL", "BL", "ファンタジー", "SF", "ホラー", "ミステリー"];
+const filters = ["ALL", "GENERAL", "SENSITIVE", "恋愛", "日常", "NL", "BL", "GL", "ファンタジー", "SF", "ホラー", "ミステリー"];
 const filtersElement = document.querySelector(".works-filters");
 const filterScrollElement = document.querySelector(".works-filter-scroll");
 const gridElement = document.querySelector(".works-grid");
