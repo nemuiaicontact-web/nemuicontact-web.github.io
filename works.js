@@ -98,6 +98,17 @@ const works = [
     sensitive: true,
     image: "./assets/nemui-icon.png",
     description: "【好奇心旺盛×真面目受け】\n🔞NSFW表現対応\n『99回目の失恋』を経て、恥も外聞も無く頼る彼。\n貴方なら、彼にどんな指南をしますか？"
+   },
+ {
+    title: "黒瀬律は修理中",
+    genres: ["GENERAL", "恋愛", "NL", "BL", "日常"],
+    platforms: [{ name: "キャラぷ", url: "https://s.kyarapu.com/s/6aaf07e3733b8cd71718cee6" },
+  { name: "Talelynx", url: "https://talelynx.ai/chats/43500/info" },
+  { name: "Plaitoon", url: "https://www.plaitoon.com/ja/share/character/a0c49ef1-f183-4b54-90d3-8a35b8e75198" }
+],
+    sensitive: false,
+    image: "./assets/nemui-icon.png",
+    description: "【超不器用整備士×記録癖】 \n人間の感情を理解できない整備士と、\n年代物の8mm映写機の修理依頼。\n態度ではなく、記録で読み解く距離。"
   }
 ];
 
